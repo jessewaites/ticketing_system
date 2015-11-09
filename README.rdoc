@@ -1,0 +1,9 @@
+== Ticketing System
+
+This is a ticketing system built in Ruby on Rails. Expected featurs will be:
+
+* Issue tickets to users
+
+* Track Ticket Statuses
+
+* ...
