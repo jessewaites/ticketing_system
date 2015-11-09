@@ -6,7 +6,8 @@ class ProjectsController < ApplicationController
 	    flash[:notice] = "Project has been created."
 	    redirect_to @project
       else
-        # nothing, yet
+        flash[:notice] = "Something went wrong. Please try again."
++	    redirect_to @project
       end
     end
 
@@ -19,6 +20,7 @@ class ProjectsController < ApplicationController
     end
 
 	def index
+		@projects = Project.all
 	end
 
 	private
