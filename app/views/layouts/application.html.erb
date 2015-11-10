@@ -8,6 +8,14 @@
 </head>
 <body>
 
+<title>
+  <% if content_for?(:title) %>
+    <%= yield(:title) %>
+  <% else %>
+    Tickets
+  <% end %>
+</title>
+
 <% flash.each do |key, value| %>
   <div class='flash' id='<%= key %>'>
     <%= value %>
